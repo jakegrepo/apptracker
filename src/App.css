@@ -183,7 +183,7 @@ button{
   justify-content: center;
   fadeIn: 6s;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1400px) {
   .nav-container {
     flex-direction: column; /* Change flex direction for stacking elements */
     align-items: flex-start; /* Align items to the start (left) */
