@@ -14,7 +14,7 @@ function Navbar() {
         <div className="nav-container">
           <NavLink exact to="/home" className="nav-logo">
             {/* <i className="fas fa-code"></i> */}
-            <span className="icon">
+            <span className="logo">
             <img src={logo}/>
             </span>
           </NavLink>
@@ -46,15 +46,6 @@ function Navbar() {
           <div className="nav-icon" onClick={handleClick}>
             {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
 
-            {click ? (
-              <span className="icon">
-                <HamburgetMenuOpen />{" "}
-              </span>
-            ) : (
-              <span className="icon">
-                <HamburgetMenuClose />
-              </span>
-            )}
           </div>
         </div>
       </nav>
