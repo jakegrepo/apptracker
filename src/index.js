@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Import ReactDOM from 'react-dom'
-import { UserProvider } from './src/Components/UserContext';
-import './Styles/index.css';
+import { UserProvider } from './Components/UserContext';
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';

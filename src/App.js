@@ -1,12 +1,12 @@
-import './Styles/App.css';
+import './App.css';
 import React, { useState, useEffect } from 'react';
-import { UserProvider, useUser } from './src/Components/UserContext';
-import { getRandomGreeting } from './src/Components/Greetings';
-import JobTracker from './src/Components/JobTracker';
-import JobList from './src/Components/JobList';
+import { UserProvider, useUser } from './Components/UserContext';
+import { getRandomGreeting } from './Components/Greetings';
+import JobTracker from './Components/JobTracker';
+import JobList from './Components/JobList';
 import { BrowserRouter as Router, Route, Routes, Navigate  } from 'react-router-dom';
-import Navbar from './src/Components/Navbar';
-import Footer from './src/Components/Footer';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 function TitleName() {
   const [title, setTitle] = useState("Howdy");
