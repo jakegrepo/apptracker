@@ -53,8 +53,8 @@ const App = () => {
     <UserProvider>
       <Navbar />
       <Routes>
-        <Route path="/apptracker/home" element={<React.Fragment><TitleName /><JobTracker onAdd={addJob} /></React.Fragment>} />
-        <Route path="/apptracker/tracker" element={<JobList allJobs={allJobs} updateAllJobs={updateAllJobs} />} />
+        <Route path="/home" element={<React.Fragment><TitleName /><JobTracker onAdd={addJob} /></React.Fragment>} />
+        <Route path="/tracker" element={<JobList allJobs={allJobs} updateAllJobs={updateAllJobs} />} />
         <Route path="/apptracker" element={<Navigate to="/apptracker/home" />} />
       </Routes>
     </UserProvider>

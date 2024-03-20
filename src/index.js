@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root')); // Provide root element directly
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/apptracker">
     <UserProvider>
     <App />
     </UserProvider>
