@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import NavBar from "./NavBar.css";
-import {  HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 import logo from "./logo_transparent.png";
 
 function Navbar() {
@@ -12,10 +10,10 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/home" className="nav-logo">
+          <NavLink exact to="/apptracker/home" className="nav-logo">
             {/* <i className="fas fa-code"></i> */}
             <span className="logo">
-            <img src={logo}/>
+            <img src={logo} alt="logo"/>
             </span>
           </NavLink>
 
@@ -23,7 +21,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/home"
+                to="/apptracker/home"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -34,7 +32,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/Tracker"
+                to="/apptracker/tracker"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
