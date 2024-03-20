@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your App Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppTracker</title>
+    <!-- Scripts and stylesheets with /apptracker base path -->
+    <script defer="defer" src="/apptracker/static/js/main.41b63d0a.js"></script>
+    <link href="/apptracker/static/css/main.d1ed0450.css" rel="stylesheet">
 </head>
 <body>
-  <div id="root"></div>
-  <!-- Add a script to handle 404 errors -->
-  <script>
-    window.onload = function () {
-      if (window.location.pathname !== '/home' && window.location.pathname !== '/tracker') {
-        window.location.href = '/home';
-      }
-    };
-  </script>
+    <div id="root"></div>
+    <script>
+        // JavaScript code ensuring correct initial URL based on the base path
+        window.onload = function() {
+            // Check if the current URL is not /apptracker/home or /apptracker/tracker
+            if ("/apptracker/home" !== window.location.pathname && "/apptracker/tracker" !== window.location.pathname) {
+                // Redirect to /apptracker/home if the current URL doesn't match
+                window.location.href = "/apptracker/home";
+            }
+        };
+    </script>
 </body>
 </html>
