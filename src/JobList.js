@@ -35,7 +35,7 @@ function JobList({ updateAllJobs }) {
                   </td>
                   <td>{j.applyDate}</td>
                   <td>
-                    <button onClick={() => removeJob(j)}>Remove</button>
+                    <button onClick={() => removeJob(j)} className="action">Remove</button>
                   </td>
                 </tr>
               ))}
