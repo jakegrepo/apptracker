@@ -125,7 +125,7 @@ h2 {
 }
 
 .username,
-.App {
+.App, .titlename {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -163,4 +163,22 @@ h2 {
 .footertext {
   margin-top: 10px;
   font-size: 14px; /* Adjust font size for smaller screens */
+}
+.container-tracker{
+  margin: 100px auto;
+  width: 30vw;
+  height: auto;
+  display: flex;
+  flex-direction:column-reverse;
+}
+button{
+  width: 10vw;
+  margin-top: 100px;
+}
+.jobadd{
+  margin-top: 60px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  fadeIn: 6s;
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./logo_transparent.png";
 import "./NavBar.css";
+import "./App.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -9,12 +10,8 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   return (
     <>
-      <nav className="navbar">
-        <div className="nav-container">
-          <NavLink to="/home" className="nav-logo">
-              <img src={logo} alt="logo"/>
-          </NavLink>
-
+   
+      <nav className="navbar"><div className="nav-container">
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
@@ -33,7 +30,7 @@ function Navbar() {
           </ul>
           <div className="nav-icon" onClick={handleClick}></div>
         </div>
-      </nav>
+        </nav>
     </>
   );
 }
