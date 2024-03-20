@@ -1,0 +1,320 @@
+body {
+    background-color: #a4f5b9;
+  }
+  .container-background{
+    background-color: #DA746F;
+    min-height: 100vh;
+  }
+  .pages {
+    color: #316685;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 10%;
+  }
+  
+  @keyframes scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.5);
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .fade-in {
+    animation: fadeIn ease-in 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 2;
+    }
+    to {
+      opacity: 15;
+    }
+  }
+  
+  .fade-out {
+    animation: fadeOut ease-out 1s forwards;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Update the existing styles to use light/dark theme classes */
+  .Form,
+  Fieldset {
+    display: inline-flex;
+    padding-right: 20px;
+    line-height: 25px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .btn {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  button:disabled {
+    background-color: #a1a1a1;
+    font-style: italic;
+  }
+  
+  button {
+    width: 35%;
+    height: auto;
+  }
+  
+  label {
+    margin-right: 10px;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 16px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 40px;
+    font-weight: bold;
+    border-right: 2px solid black;
+  }
+  
+  
+  .message {
+    font-size: 10px;
+    margin-top: 20px;
+    color: #ff0000;
+  }
+  
+  .username,
+  .App {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .logo1 {
+    width: 75px;
+    height: auto;
+    transform: rotate(90deg);
+    padding: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .logo2 {
+    width: 75px;
+    height: auto;
+    transform: rotate(270deg);
+    padding: 0;
+    cursor: pointer;
+    background-repeat: round;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .logo-container {
+    margin-right: 0;
+    padding: 0;
+    margin: 0;
+    width:100%;
+    height:100%;
+    image-rendering: 0 0 24 24;
+  }
+  .logo1,
+  .logo2 {
+    opacity: 1;
+    border: 2px solid #fff;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  .titlename{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    color: #250e11;
+    width:-moz-fit-content;
+    width:fit-content;
+    margin-bottom: 150px;
+    font-size: 50px;
+  }
+  title, button.title, .joblist{
+    display: flex;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-bottom: 150px;
+    margin-top: 10px;
+    color: rgb(14, 14, 14);
+    width:-moz-fit-content;
+    width:fit-content;
+  }
+  .applicationTracker{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #250e11;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .listing,.tracker{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    width:20vw;
+    height: auto;
+    font-size: 20px;
+    border: 4px solid black;
+  }
+  .tracker{
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    max-width: max-content;
+  }
+  .companyLink, .date{
+    margin: 0 auto;
+    padding: 4px;
+    color: rgb(0, 0, 0);
+    width:-moz-fit-content;
+    width:fit-content;
+    font-size: 20px;
+    color: rgb(42, 61, 165);
+    font-weight: bold;
+    max-width: max-content;
+  }
+  .container-tracker{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  
+  }
+  .container-jobs{
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+  
+  tr,table{
+    margin-top: 20px;
+    display: table;
+    color: rgb(0, 0, 0);
+    width:100%;
+    font-size: 20px;
+    max-width:100%;
+  }
+  th{
+    color: rgb(0, 0, 0);
+    width:100%;
+    font-size: 20px;
+    width:33%;
+    margin-bottom: 10px;
+    border-bottom: 3px solid black;
+  
+  }
+  td{
+    width: 33%;
+  }
+    
+  }
+  .trackercolumn{
+    display: inline-flex;
+    width: 100%;
+  }
+  li{
+    display: list-item;
+    margin: 0 auto;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    min-width:inherit;
+    justify-content: flex-start;
+  }
+  ol{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    max-width:100%;
+  }
+  .footer-content {
+    background-color: #09459D;
+    color: #fff;
+    text-align: bottom;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    max-height:-moz-fit-content;
+    max-height:fit-content;
+  }
+  
+  .logo {
+    width: 125px;
+    height: 125px;
+    display: flex;
+  }
+  .footertext{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 55px;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    width:-moz-fit-content;
+    width:fit-content;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    max-width: max-content;
+  }
