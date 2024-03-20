@@ -55,7 +55,7 @@ const App = () => {
       <Routes>
         <Route path="/home" element={<React.Fragment><TitleName /><JobTracker onAdd={addJob} /></React.Fragment>} />
         <Route path="/tracker" element={<JobList allJobs={allJobs} updateAllJobs={updateAllJobs} />} />
-        <Route path="/" element={<Navigate to="/apptracker/home" />} />
+        <Route path="/" element={<Navigate to="/home" />} />
       </Routes>
     </UserProvider>
     <Footer /></div>
