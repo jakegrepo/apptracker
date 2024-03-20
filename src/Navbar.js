@@ -11,7 +11,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact="true" to="/apptracker/home" className="nav-logo">
+          <NavLink exact="true" to="/home" className="nav-logo">
             <span className="logo">
               <img src={logo} alt="logo"/>
             </span>
@@ -21,7 +21,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact="true"
-                to="/apptracker/home"
+                to="/home"
                 activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -32,7 +32,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact="true"
-                to="/apptracker/tracker"
+                to="/tracker"
                 activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
