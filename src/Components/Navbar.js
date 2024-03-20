@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import NavBar from "./NavBar.css";
-import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
+import {  HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 import logo from "./logo_transparent.png";
 
 function Navbar() {
