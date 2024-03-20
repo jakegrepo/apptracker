@@ -2,9 +2,7 @@
 .navbar {
   background-color: #09459D;
   height: 80px;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
@@ -12,12 +10,11 @@
 }
 
 .nav-container {
-  display: flex;
   justify-content: flex-start; /* Align items to the start (left) */
   align-items: center;
   width: 90%;
   max-width: 1500px;
-  position: relative;
+  position: fixed;
 }
 
 .nav-logo,.nav-logo img {
@@ -50,7 +47,7 @@
 }
 
 .nav-item {
-  margin-right: 1rem;
+  margin-right: 0rem;
 }
 
 .nav-item:last-child {
@@ -82,44 +79,39 @@
 }
 
 /* Media query for mobile responsiveness */
-@media screen and (max-width: 960px) {
-  .nav-logo {
-    display: flex;
-    color: #f5b921;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    margin-left: 55px; /* Adjust as needed */
-    max-width: 100%;
-    height: auto;
-  }
-
-  img {
-    max-width: 25%;
-    height: auto;
+@media screen and (max-width: 100px) {
+  .nav-container {
+    flex-direction: column; /* Change flex direction for stacking elements */
+    align-items: flex-start; /* Align items to the start (left) */
+    position: relative;
+    display: flex; /* Ensure relative positioning for absolute children */
   }
 
   .nav-menu {
-    display: none;
-    flex-direction: column;
+    display: none; /* Hide the menu by default */
+    position: absolute; /* Position absolutely within the navbar container */
+    top: 80px; /* Adjust as needed based on navbar height */
+    left: 0;
     width: 100%;
-    position: absolute;
-    top: 80px;
-    left: -110%;
-    background: #09459D;
+    background: #09459D; /* Keep the original navbar background */
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1; /* Ensure menu is above other content */
+    z-index: 1;
   }
 
   .nav-menu.active {
-    left: 0px;
+    display: flex; /* Show the menu when active */
+    flex-direction: column;
   }
 
   .nav-links {
-    padding: 1.5rem;
-    width: 100%;
-    text-align: left; /* Adjust alignment for smaller screens */
+    color: #fff; /* Add text color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid transparent;
+    margin-right: 1rem;
+    width: 100%; /* Make sure links take up full width */
+    text-align: right; /* Adjust alignment for smaller screens */
   }
 
   .nav-icon {

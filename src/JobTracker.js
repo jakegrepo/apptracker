@@ -16,10 +16,7 @@ export function JobForm({ onAdd }) { // Destructure onAdd directly from props
         setFormData({ company: "", jobListing: "", applyDate: "" });
         setMessage('Job has been added to your tracker! View "Tracker" tab');
         console.log("Job Added");
-                // Clear the message after 3 seconds (3000 milliseconds)
-                setTimeout(() => {
-                    setMessage('');
-                }, 6000);
+        setTimeout(() => {setMessage('');}, 6000);
             
     }
 

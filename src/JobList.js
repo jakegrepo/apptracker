@@ -24,7 +24,7 @@ function JobList({ updateAllJobs }) {
               <tr>
                 <th>Company</th>
                 <th>Date</th>
-                <th>Action</th> {/* Add a column for the remove button */}
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
