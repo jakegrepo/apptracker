@@ -12,9 +12,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink to="/home" className="nav-logo">
-            <span className="logo">
               <img src={logo} alt="logo"/>
-            </span>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -23,20 +21,14 @@ function Navbar() {
                 to="/home"
                 activeclassname="active"
                 className="nav-links"
-                onClick={handleClick}
-              >
-                Home
-              </NavLink>
+                onClick={handleClick}>Home</NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 to="/tracker"
                 activeclassname="active"
                 className="nav-links"
-                onClick={handleClick}
-              >
-                Tracker
-              </NavLink>
+                onClick={handleClick}>Tracker</NavLink>
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}></div>
