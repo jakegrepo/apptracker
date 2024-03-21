@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/apptracker/static/css/main.20be0261.css",
-    "main.js": "/apptracker/static/js/main.222e2ae6.js",
+    "main.css": "/apptracker/static/css/main.a9cf5da8.css",
+    "main.js": "/apptracker/static/js/main.51e34a5a.js",
     "static/js/453.3af254a5.chunk.js": "/apptracker/static/js/453.3af254a5.chunk.js",
     "index.html": "/apptracker/index.html",
-    "main.20be0261.css.map": "/apptracker/static/css/main.20be0261.css.map",
-    "main.222e2ae6.js.map": "/apptracker/static/js/main.222e2ae6.js.map",
+    "main.a9cf5da8.css.map": "/apptracker/static/css/main.a9cf5da8.css.map",
+    "main.51e34a5a.js.map": "/apptracker/static/js/main.51e34a5a.js.map",
     "453.3af254a5.chunk.js.map": "/apptracker/static/js/453.3af254a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20be0261.css",
-    "static/js/main.222e2ae6.js"
+    "static/css/main.a9cf5da8.css",
+    "static/js/main.51e34a5a.js"
   ]
 }
