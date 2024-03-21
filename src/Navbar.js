@@ -12,7 +12,7 @@ function Navbar() {
     <><nav className="navbar"><div className="nav-container">
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <NavLink to="/home"
+          <NavLink to="/"
               activeclassname="active" className="nav-links"
                 onClick={handleClick}>Home</NavLink></li>
             <li className="nav-item"><NavLink to="/tracker" activeclassname="active" className="nav-links"

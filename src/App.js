@@ -39,6 +39,7 @@ function TitleName() {
   );
 }
 
+
 const App = () => {
   const [allJobs, updateAllJobs] = useState([]);
 
@@ -53,7 +54,7 @@ const App = () => {
     <UserProvider>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<React.Fragment><TitleName /><JobTracker onAdd={addJob} /></React.Fragment>} />
+        <Route path="/" element={<React.Fragment><TitleName /><JobTracker onAdd={addJob} /></React.Fragment>} />
         <Route path="/tracker" element={<JobList allJobs={allJobs} updateAllJobs={updateAllJobs} />} />
       </Routes>
     </UserProvider>

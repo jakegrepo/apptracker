@@ -69,7 +69,8 @@ Fieldset {
   padding-right: 20px;
   line-height: 25px;
   margin: 0 auto;
-  padding-top: 15px;
+  margin-top: 65px;
+  padding-top: 25px;
 }
 
 .btn {
@@ -127,10 +128,11 @@ h2 {
 
 .username,
 .App, .titlename {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
+  position: relative;
 }
 
 /* Logo Styles */
@@ -190,9 +192,14 @@ button{
     position: relative;
     display: flex; /* Ensure relative positioning for absolute children */
   }
-  .button{
-    width: 100vw;
+  .button, Button{
+    margin-top: 15px;
+    border: black;
+    width: 40vw;
     height: 6vh;
+  }
+  .listing{
+    margin-bottom: 20px;
   }
   .title{
     font-size: 12px;
