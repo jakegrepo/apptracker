@@ -10,7 +10,45 @@ body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
+.action,.td{
+  width: fit-content;
+}
 
+.container-jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.container-jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 100%;
+}
+
+.container-jobs table {
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Adjust the vertical spacing (second value) */
+  width: 96%;
+}
+
+.container-jobs th,
+.container-jobs td,td {
+  padding: 8px; /* Add padding for better spacing */
+  width: 31%;
+}
+
+/* Additional styling for the table headers */
+.container-jobs th {
+  background-color: #f0f0f0; /* Example background color */
+  font-weight: bold; /* Example font weight */
+}
 .container-background {
   background-color: #DA746F;
   min-height: 100vh;
@@ -22,6 +60,9 @@ body {
   text-align: center;
   font-size: 3.5rem;
   margin-top: 10%;
+}
+table{
+  margin-right: 20px;
 }
 
 /* Keyframes */
@@ -69,8 +110,32 @@ Fieldset {
   padding-right: 20px;
   line-height: 25px;
   margin: 0 auto;
-  margin-top: 65px;
+  width: 20vw;
+  margin-top: 35px;
   padding-top: 25px;
+}
+.listing{
+  padding:10px;
+  margin:5px;
+}
+.input{
+  gap: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 100%;
+}
+
+input {
+  width: 25%; /* Ensure all input elements take up the full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  margin-bottom: 10px; /* Add margin between input elements */
 }
 
 .btn {
@@ -91,8 +156,11 @@ button:disabled {
   font-style: italic;
 }
 
-button {
-  width: 100%; /* Make button width full */
+.submitbtn {
+  width: 15%;
+  margin-top: 1px; /* Make button width full */
+  border: solid 3px black;
+  border-radius: 5px;
 }
 
 label {
@@ -128,7 +196,7 @@ h2 {
 
 .username,
 .App, .titlename {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
@@ -168,15 +236,15 @@ h2 {
   font-size: 14px; /* Adjust font size for smaller screens */
 }
 .container-tracker{
-  margin: 100px auto;
-  width: 30vw;
+  margin: 25px auto;
+  width: 20vw;
   height: auto;
   display: flex;
   flex-direction:column-reverse;
 }
-button{
+button,Button{
   width: 10vw;
-  margin-top: 100px;
+  margin-top: 25px;
 }
 .jobadd{
   margin-top: 60px;
@@ -205,13 +273,36 @@ button{
     font-size: 12px;
     width: 40vw;
   }
-  form{
+  .form{
     width: 40vw;
   }
   .action{
-    width: 20vw;
+    width: 25vw;
+    margin-bottom: 5px;
   }
   td{
     width: 35vw;
+  }
+  .submitbtn {
+    width: 55%;
+    margin-top: 1px; /* Make button width full */
+    border: solid 3px black;
+    border-radius: 5px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 100%;
+  }
+  
+  input {
+    width: 55%; /* Ensure all input elements take up the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-bottom: 10px; /* Add margin between input elements */
   }
 }
